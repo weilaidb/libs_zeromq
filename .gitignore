@@ -1,2 +1,6 @@
 /build-libzeromq-Desktop_Qt_5_14_2_MinGW_32_bit-Debug
 /build-libzeromq-Desktop_Qt_5_14_2_MinGW_32_bit-Release
+/build-app_zeromq-Desktop_Qt_5_14_2_MinGW_32_bit-Debug
+/eg/client/build-client-Desktop_Qt_5_14_2_MinGW_32_bit-Debug
+/eg/server/build-server-Desktop_Qt_5_14_2_MinGW_32_bit-Debug
+/tar/libzmq-4.3.2
