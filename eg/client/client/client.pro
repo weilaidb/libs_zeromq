@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        cclientpub.cpp \
         main.cpp
 
 #添加外部的引用头文件和库文件
@@ -18,5 +19,6 @@ DISTFILES += \
     ../../../libzmq-v141-4_3_2/libzmq-v141-mt-s-4_3_2.lib
 
 HEADERS += \
-    ../../../libzmq-v141-4_3_2/zmq.h
+    ../../../libzmq-v141-4_3_2/zmq.h \
+    cclientpub.h
 

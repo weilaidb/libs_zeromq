@@ -3,10 +3,12 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "cclientpub.h"
+
 
 int main (void)
 {
-    printf ("Connecting to hello world server…\n");
+    printf ("Connecting to hello world server...\n");
 
     /*创建一个新的上下文*/
     void *context = zmq_ctx_new ();
@@ -17,7 +19,7 @@ int main (void)
     int request_nbr;
     for (request_nbr = 0; request_nbr != 1000; request_nbr++) {
         char buffer [10];
-        printf ("Sending Hello %d…\n", request_nbr);
+        printf ("Sending Hello %d \n", request_nbr);
         zmq_send (requester, "Hello", 5, 0);
         zmq_recv (requester, buffer, 10, 0);
         printf ("Received World %d\n", request_nbr);
